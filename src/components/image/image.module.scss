@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+
+.image_wrapper {
+  position: relative;
+  margin-bottom: 26px;
+  transition: 0.5s ease-in-out;
+}
+.image {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+.image_data {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  @media (pointer: coarse) {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (hover) {
+  .image_wrapper:hover .image_data {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .image_wrapper:hover {
+    z-index: 2;
+    transform: scale(1.05);
+  }
+}

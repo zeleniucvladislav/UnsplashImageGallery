@@ -1,0 +1,21 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid $secondary-color;
+  border-radius: 50%;
+  border-top-color: $main-color;
+  animation: 1.2s spin infinite ease-in-out;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

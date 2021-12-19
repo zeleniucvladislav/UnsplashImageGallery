@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+
+.image_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0px;
+  &__left {
+    padding-left: 20px;
+  }
+  &__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding-right: 20px;
+  }
+}
+.download_btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  color: white;
+  background-color: $secondary-color;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  &:hover,
+  &:active {
+    background-color: $main-color;
+  }
+}
+.like_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

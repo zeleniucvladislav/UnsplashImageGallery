@@ -1,0 +1,13 @@
+.images_wrapper {
+  padding: 100px 10%;
+}
+.images {
+  column-count: 3;
+  column-gap: 30px;
+  @media (max-width: 768px) {
+    column-count: 1;
+  }
+  @media (min-width: 769px) and (max-width: 1280px) {
+    column-count: 2;
+  }
+}

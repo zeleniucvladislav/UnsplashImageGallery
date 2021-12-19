@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+
+.error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 50px;
+  word-break: break-all;
+  text-align: justify;
+  gap: 30px;
+  font-size: 20px;
+  color: $secondary-color;
+  &__icon {
+    font-size: 150px;
+  }
+}
