@@ -5,6 +5,7 @@ import { Search } from "../components";
 import Modal from "../components/modal/modal";
 import SearchedImages from "./images/searchedImages";
 import NewImages from "./images/newImages";
+import OnTopBtn from "../components/scrollOnTop/onTopBtn";
 
 const Homepage = () => {
   const [modal, setModal] = useState(false);
@@ -19,6 +20,7 @@ const Homepage = () => {
       {modal && <Modal text="Download started! This will take a while." />}
       <Search onSearch={onSearch} />
       {query.length > 0 ? <SearchedImages query={query} /> : <NewImages />}
+      <OnTopBtn />
     </ModalContext.Provider>
   );
 };

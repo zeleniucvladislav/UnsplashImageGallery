@@ -6,7 +6,7 @@ const access_key = process.env.REACT_APP_ACCESS_KEY;
 const getImages = <T>(page: number): Promise<AxiosResponse> => {
   return request<T>("get", "/photos", {
     client_id: access_key,
-    per_page: 30,
+    per_page: 20,
     page,
   });
 };
@@ -18,7 +18,7 @@ const getSearchedImages = <T>(
   return request<T>("get", "search/photos", {
     client_id: access_key,
     query: searchQuery,
-    per_page: 30,
+    per_page: 20,
     page,
   });
 };

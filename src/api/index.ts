@@ -7,7 +7,7 @@ const api = axios.create({
 const request = <T>(
   method: Method,
   url: string,
-  params?: any
+  params: any
 ): Promise<AxiosResponse<T>> => {
   return api.request<T>({
     method,
